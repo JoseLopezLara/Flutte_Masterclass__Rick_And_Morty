@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:masterclass_rick_and_morty_app/presentation/screens/home/characters/character_screen.dart';
-import 'package:masterclass_rick_and_morty_app/presentation/screens/home/episodies/episodies_screen.dart';
+import 'package:masterclass_rick_and_morty_app/presentation/screens/home/episodies/controllers/episodes_screen.dart';
 import 'package:masterclass_rick_and_morty_app/presentation/screens/home/locations/locations_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final pageController = PageController();
   final pages = [
     const CharacterScreen(),
-    const EpisodiesScreen(),
+    const EpisodeScreen(),
     const LocationsScreen()
   ];
 
@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 label: 'Characters'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.tv_rounded, color: Colors.white),
-                label: 'Esposidies'),
+                label: 'Episdes'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.location_city_outlined, color: Colors.white),
                 label: 'Locations')
